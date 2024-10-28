@@ -1,0 +1,17 @@
+name: Run Google Colab Notebook
+
+on:
+  schedule:
+    - cron: '0 3 * * *'  # Lịch trình chạy mỗi ngày vào 10h sáng
+
+jobs:
+  run_colab:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Run Colab Notebook
+      run: |
+        curl -X POST https://colab.research.google.com/drive/1iQ4deYGPUZA4_5U5bx3zIP3_JpD4ynGf?usp=sharing#scrollTo=o6w8BmInX4qo/execute
