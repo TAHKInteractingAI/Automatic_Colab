@@ -1,8 +1,8 @@
-name: Run Google Colab Notebook
+name: Run Colab Notebook with Papermill
 
 on:
   schedule:
-    - cron: '0 3 * * *'  # Lịch trình chạy mỗi ngày vào 10h sáng
+    - cron: '0 9 * * *'  # Chạy vào 9h sáng UTC mỗi ngày
 
 jobs:
   run_colab:
@@ -12,6 +12,17 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Run Colab Notebook
+    - name: Install dependencies
       run: |
-        curl -X POST https://colab.research.google.com/drive/1iQ4deYGPUZA4_5U5bx3zIP3_JpD4ynGf?usp=sharing#scrollTo=o6w8BmInX4qo/execute
+        pip install papermill nbformat
+
+    - name: Run Notebook with Papermill
+      run: |
+        papermill https://colab.research.google.com/drive/1iQ4deYGPUZA4_5U5bx3zIP3_JpD4ynGf?usp=sharing#scrollTo=D-ME4it8XkiR your_output.ipynb
+    - name: Commit and Push Output
+      run: |
+        git config --local user.email "donate@tahkfoundation.org"
+        git config --local user.name "TAHKInteractingAI"
+        git add your_output.ipynb
+        git commit -m "Update output notebook"
+        git push
