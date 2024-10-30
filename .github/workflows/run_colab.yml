@@ -15,7 +15,10 @@ jobs:
     - name: Install dependencies
       run: |
         pip install papermill nbformat
-
+    - name: Install dependencies
+      run: |
+        pip install papermill nbformat ipykernel
+        python -m ipykernel install --user --name python3
     - name: Run Notebook with Papermill
       run: |
         papermill Connect_Linkedin_with_cookie.ipynb your_output.ipynb
