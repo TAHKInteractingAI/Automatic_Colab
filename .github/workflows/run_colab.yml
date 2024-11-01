@@ -2,7 +2,7 @@ name: Run Colab Notebook with Papermill
 
 on:
   schedule:
-    - cron: '0 8 * * *'  # Chạy vào 10h sáng UTC mỗi ngày
+    - cron: '0 9 * * *'  # Chạy vào 10h sáng UTC mỗi ngày
 
 jobs:
   run_colab:
@@ -22,10 +22,10 @@ jobs:
     - name: Run Notebook with Papermill
       run: |
         papermill Connect_Linkedin_with_cookie.ipynb your_output.ipynb
-    - name: Commit and Push Output
-      run: |
-        git config --local user.email "donate@tahkfoundation.org"
-        git config --local user.name "TAHKInteractingAI"
-        git add your_output.ipynb
-        git commit -m "Update output notebook"
-        git push
+    # - name: Commit and Push Output
+    #   run: |
+    #     git config --local user.email "donate@tahkfoundation.org"
+    #     git config --local user.name "TAHKInteractingAI"
+    #     git add your_output.ipynb
+    #     git commit -m "Update output notebook"
+    #     git push
