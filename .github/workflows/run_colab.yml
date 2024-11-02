@@ -2,7 +2,7 @@ name: Run Colab Notebook with Papermill
 
 on:
   schedule:
-    - cron: '0 3 * * *'  # Chạy vào 10h sáng UTC mỗi ngày
+    - cron: '0 2 * * *'  # Chạy vào 10h sáng UTC mỗi ngày
 
 jobs:
   run_colab:
