@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "tokyo-vigil-436805-j9",
+  "private_key_id": "fb8cfc624a0a4bf33ed3df72a2944918f002bcd9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDHmR3z5+B8g8PN\nc28onWqmvW/OlW5eJb6GHq3WZttBnmZx84zMNl0AFb1owidZUlm5ysOPdM7tKuKT\nrR3LyjCCU0cVRQbvvUraK7s+7L7PbHWbzaW34ld0KSePU92Ej9Mqh6+HjAGEqai/\nPm1kiQ89qI3kib3+uDeBVOGcRxbEw/pn5Bir0WA6hbo75O7aKTc3YUKKKn2NjXVl\n2aNgUU7YKrw0hsQEkArDk5yMUTm159pjzyaiZJXKsg/fJ3ThWgmEIVfkIVYQfq2P\nRQD6vEpXEAHCkkhqFenQHn4VeR7rIXWYtatgD+h9RdVO1t0i+9cw7f7QVaYZzgld\n4daSgDHjAgMBAAECggEAE8WbLfoeRrdWwhdZP5C4a+QAG1q6ICFlCiwn1EFEHu/t\n/gO+Qsxv0f5VUPdKppJ9yOXJEYDkrqG86BwSA4n33DEbrYO0+DKsI4iJd+ZD0JBR\n5iks7VZCi4M4I/6Oxv7oUCI4xRidXeLgkHFCrN7W36i+xZDPfVgKR4l8/9oa60rB\nugChm7R+JMDOmY/m46V9C8YKcTNstK4dIpJxUIsaFNU7BXbrE07YYziwFdbsDj8i\nxrySkcsIgTa3gDrOxIeH7tPgBoZKCRzw7xNxxc51EqWaqww26ULNWwP74YO7GrsI\nMIx5AB9BgaXJxPz/Yd4fde8YPA2BCWPQ1BADkA4JwQKBgQDv/7veli4FeBpUFHJj\nPSxqpcOVm1c058Exnn7Zb7aeVv8eqt42h1terTstt6GB3U8YxDQ/MXLKaCh/pQnr\nFGzPGjA/TbEuj5uFfQzxsPj5QeTgUGOnaDa6jxT6YEOlVCQ5VaCqJ1zIKzOnhbKM\nqV8h9A23yB6Io3EJJlosANdeawKBgQDU59Pa9WC37icgV8XPdMAz1XoZKtkLcXos\nF3/cRt4Yc/Kt/k3VzPFVGFqCw1/9C2shm9heRz1qXp/u6HoCVZcWg/moqR30GzCu\nJKiltzhmBIBBH+PJVCQCs6fr6PXiYomo9NIQp+Qd60HWSti+7r+DtSAS2zFkzRUl\nIZJoKS1oaQKBgQC+mRtLX3t3DnXiVkatt3Rh0fltA+wS8QbF8DiPWB/wyehcI5jM\nN10B6JN58D7MksRxR8iycwPV6ThYfupMjnEHXKX6cCoJbzU0oyY3f7OKyKEK3+z0\nk1f7ewxO90phr1wBSJaK6y3NLjocjZpKCWyq21ZVoRFWtG5dtN6h2Z0wtwKBgFMU\nnCFne3SK5I3EcpZ/8rjHZzwG8md6wrgN+4ETznswU9T91ZXGwa35MOiyIPT3zbhx\nvj8cAaVOg46Q/XuHtsu8eGIOjHfDXH24JG92TfXRb9L6BMN9qAe935s5byoGVb2u\nu4JwYZ4jPa/HyUjIlcdpmLiC/IVfWg8BSMaIuwVxAoGBAOIIXiWpQIghAb3e5iqq\nPhMfvx5DOAjxTeEPNZJTfIE/KyFWPeWVUW11U54s+nWGh+g7pzjzvdoGxIrsP30n\nvJjRKh8QWl4F/sQH9P52fVWwM+hnCH+/gDUgqakwUl9GrjTelgv1njStcYEY9110\ntY8IZcpvMJfXYCTkCOXsfODF\n-----END PRIVATE KEY-----\n",
+  "client_email": "gg-colab@tokyo-vigil-436805-j9.iam.gserviceaccount.com",
+  "client_id": "107118491662850142801",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gg-colab%40tokyo-vigil-436805-j9.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
