@@ -2,7 +2,7 @@ name: Run Colab Notebook with Papermill
 
 on:
   schedule:
-    - cron: '0 2 * * *'  # Chạy vào 10h sáng UTC mỗi ngày
+    - cron: '0 7 * * *'  # Chạy vào 10h sáng UTC mỗi ngày
 
 jobs:
   run_colab:
@@ -21,7 +21,7 @@ jobs:
         python -m ipykernel install --user --name python3
     - name: Run Notebook with Papermill
       run: |
-        papermill Message_Linkedin_with_cookie.ipynb your_output.ipynb
+        papermill Connect_Linkedin_with_cookie.ipynb your_output.ipynb
     # - name: Commit and Push Output
     #   run: |
     #     git config --local user.email "donate@tahkfoundation.org"
