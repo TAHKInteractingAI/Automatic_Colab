@@ -1,4 +1,4 @@
-name: Run Colab Notebook with Papermill
+name: Run Colab Notebooks with Papermill
 
 on:
   schedule:
@@ -14,18 +14,13 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install papermill nbformat
-    - name: Install dependencies
-      run: |
         pip install papermill nbformat ipykernel
         python -m ipykernel install --user --name python3
-    - name: Run Notebook with Papermill
+
+    - name: Run First Notebook with Papermill
       run: |
-        papermill Connect_Linkedin_with_cookie.ipynb your_output.ipynb
-    # - name: Commit and Push Output
-    #   run: |
-    #     git config --local user.email "donate@tahkfoundation.org"
-    #     git config --local user.name "TAHKInteractingAI"
-    #     git add your_output.ipynb
-    #     git commit -m "Update output notebook"
-    #     git push
+        papermill Connect_Linkedin_with_cookie.ipynb output_first_notebook.ipynb
+
+    - name: Run Second Notebook with Papermill
+      run: |
+        papermill LINKEDIN_BOT_MESSAGE_V2.ipynb output_second_notebook.ipynb
