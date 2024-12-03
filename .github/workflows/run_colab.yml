@@ -17,14 +17,6 @@ jobs:
         pip install papermill nbformat ipykernel
         python -m ipykernel install --user --name python3
 
-    - name: Run First Notebook with Papermill
-      run: |
-        papermill Connect_Linkedin_with_cookie.ipynb output_first_notebook.ipynb
-
-    - name: Run Second Notebook with Papermill
-      run: |
-        papermill LINKEDIN_BOT_MESSAGE_V2.ipynb output_second_notebook.ipynb
-
     - name: Commit and push results
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
